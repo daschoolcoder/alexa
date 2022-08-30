@@ -1,0 +1,17 @@
+let user = prompt("hello im a computer pls enter a command if you want a list enter list for a list of commands"); if (user == "lottory") {
+let bet = parseFloat(prompt("pls enter bet")); var odds; let choce = prompt("pls select lottory 1 2 or 3 or enter ticket game for a clasic lottory"); if (choce == "1") {odds = Math.floor(Math.random() * 10); if (odds == 5) {alert("u just won " + bet);} else {alert("oof u lost now pls pay up ur " + bet );};} else if (choce == "2") { odds = Math.floor(Math.random() * 25); if (oods == 10) {bet = bet * 69;alert("you just won" + bet);} else {alert("oof u lost now pls pay up ur " + bet);};} else if (choce == "3") {odds = Math.floor(Math.random() * 100); if (odds == 15) {alert("u just won " + bet);} else { alert("oof u lost now pls pay me ur " + bet);};}else if (choce == "ticket game") {let num1 = Math.floor(Math.random() * 9999); let num2 = Math.floor(Math.random() * 999); let num3 = Math.floor(Math.random() * 99); let num4 = Math.floor(Math.random() * 9); var num = num1 + num2 + num3 + num4; var ticket = prompt("pls enter a 4 didget number"); if (ticket == num) {alert ("you won " + bet + "$$$$ the number was " + num);} else {alert("oof u lost " + bet + "$ the number was " + num);} ;} else { alert("!?!?!?!");};}
+else if (user == "list") {alert("heres a list of commands: lottory, jokes, search, ben, backrooms, find my dad, ");}
+else if (user == "search") { let url1 = prompt("ok please enter site name No .com"); let url2 = prompt("now enter a .com /.net/.gov"); let url = url1 + url2 ; let a = prompt("are you sure you want to go to :" + url) ;if (a == "yes"){ window.location.href = "https://" + url;};}
+else if (user == "ben") {alert("ben")}
+else if (user == "backrooms") {window.location.href = null}
+else if (user == "find my dad") {window.location.href = "dad"}
+else if (user == "") {}
+
+
+
+
+
+
+
+
+else { alert("sorry i did not understand ---> " + user + " <--- pls check if there is a typo in your response for more help pls go to this link ----->https://sites.google.com/kellerisd.com/js-alexa/home ");}
