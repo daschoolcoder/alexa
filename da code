@@ -3,7 +3,7 @@ let bet = parseFloat(prompt("pls enter bet")); var odds; let choce = prompt("pls
 else if (user == "list") {alert("heres a list of commands: lottory, jokes, search, ben, backrooms, find my dad, ");}
 else if (user == "search") { let url1 = prompt("ok please enter site name No .com"); let url2 = prompt("now enter a .com /.net/.gov"); let url = url1 + url2 ; let a = prompt("are you sure you want to go to :" + url) ;if (a == "yes"){ window.location.href = "https://" + url;};}
 else if (user == "ben") {alert("ben")}
-else if (user == "backrooms") {window.location.href = null}
+else if (user == "backrooms") {window.location.href = "https://null"}
 else if (user == "find my dad") {window.location.href = "dad"}
 else if (user == "jokes") {let select = Math.floor(Math.random() * 8);
 if (select == 1) { alert("why did the ai go easy on you"); alert("because it was getting SOFT-ware")}
@@ -16,7 +16,8 @@ else if (select == 7) {alert("how does a bee tell you to be gone "); alert("Bee-
 
 ;}
 
-else if (user == "") {}
+else if (user == "social credit") { function death() {alert(":(((( no more social credit :(((((((");} let credit = 10; let choice = prompt("is tiwan a contry")
+; if (choice == "yes"); {credit = credit - 5 ; alert("oof -5 social credit");} else if (choice == "no") {} 
 
 
 
