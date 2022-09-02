@@ -1,9 +1,12 @@
 let user = prompt("hello im a computer pls enter a command if you want a list enter list for a list of commands"); if (user == "lottory") {
 let bet = parseFloat(prompt("pls enter bet")); var odds; let choce = prompt("pls select lottory 1 2 or 3 or enter ticket game for a clasic lottory"); if (choce == "1") {odds = Math.floor(Math.random() * 10); if (odds == 5) {alert("u just won " + bet);} else {alert("oof u lost now pls pay up ur " + bet );};} else if (choce == "2") { odds = Math.floor(Math.random() * 25); if (oods == 10) {bet = bet * 69;alert("you just won" + bet);} else {alert("oof u lost now pls pay up ur " + bet);};} else if (choce == "3") {odds = Math.floor(Math.random() * 100); if (odds == 15) {alert("u just won " + bet);} else { alert("oof u lost now pls pay me ur " + bet);};}else if (choce == "ticket game") {let num1 = Math.floor(Math.random() * 9999); let num2 = Math.floor(Math.random() * 999); let num3 = Math.floor(Math.random() * 99); let num4 = Math.floor(Math.random() * 9); var num = num1 + num2 + num3 + num4; var ticket = prompt("pls enter a 4 didget number"); if (ticket == num) {alert ("you won " + bet + "$$$$ the number was " + num);} else {alert("oof u lost " + bet + "$ the number was " + num);} ;} else { alert("!?!?!?!");};}
-else if (user == "list") {alert("heres a list of commands: lottory, jokes, search, ben, backrooms, find my dad, ");}
+
+else if (user == "list") {alert("heres a list of commands: lottory, jokes, search, ben, backrooms, find my dad, soical credit, how do i code, games,  ");}
+
 else if (user == "search") { let url1 = prompt("ok please enter site name No .com"); let url2 = prompt("now enter a .com /.net/.gov"); let url = url1 + url2 ; let a = prompt("are you sure you want to go to :" + url) ;if (a == "yes"){ window.location.href = "https://" + url;};}
+
 else if (user == "ben") {alert("ben")}
-else if (user == "backrooms") {window.location.href = "https://null"}
+else if (user == "backrooms") {window.location.href = "https://" + null + ".com"}
 else if (user == "find my dad") {window.location.href = "dad"}
 else if (user == "jokes") {let select = Math.floor(Math.random() * 8);
 if (select == 1) { alert("why did the ai go easy on you"); alert("because it was getting SOFT-ware")}
@@ -16,12 +19,19 @@ else if (select == 7) {alert("how does a bee tell you to be gone "); alert("Bee-
 
 ;}
 
-else if (user == "social credit") { function death() {alert(":(((( no more social credit :(((((((");} let credit = 10; let choice = prompt("is tiwan a contry")
-; if (choice == "yes"); {credit = credit - 5 ; alert("oof -5 social credit");} else if (choice == "no") {} 
+else if (user == "social credit") {function death() {alert(":(((( no more social credit :((((((( ur credit:" + credit);} let credit = 10; let choice = prompt("is tiwan a contry");
 
+if (choice == "yes") {credit = credit - 5 ; alert("oof -5 social credit credit:" + credit);} 
 
+else if (choice == "no") {credit = credit + 5 ; alert("good job +5 social credit ur credit:" + credit);} let choice2 = prompt("which is bigger usa or china"); if (choice2 == "usa") { credit = credit - 5 ; alert("no china is bigger -5 soical credit ur credit:" + credit);}
 
+else if (choice2 == "china") {credit = credit + 5 ; alert("yes china is bigger ur credit:" + credit);} if (credit <= 0) { death();} let choice3 = prompt("what happend in teinamin square"); if (choice3 == "nothing") {credit = credit + 5;alert("yes nothing happend +5 credit ur credit:" + credit);} else {alert("ooooooof nothing happend -99999999 soical credit ur credit:" + credit); credit = credit - 99999999;} if (credit <= 0) {death();} let choice4 = prompt("is china comunist"); if (choice4 == "yes") {credit = credit - 10 ; alert("no we are not -10 soical credit credit:" + credit);} else if (choice4 == "no") {credit = credit * 2 ; alert("yes we are not comunist * 2 social credit. credit:" + credit);} if (credit <= 0) {death();} else {alert("u made it this far good job ur credit score:" + credit + "if you want to see more of this skill please leave a comment on our git hub page");}  ;}
 
+else if (user == "") {}
+else if (user == null) {}
 
+else if (user == "how do i code") {let select = prompt("what programing language do you want to learn i can do javascript or html"); if (select == "javascript") {alert("here is a list of websites to lear js, javascript.com, web3schools, js fiddle and stack overflow. these websites where used to help make this alexa");} else if (select == "html") {alert("here is a listof websites web3shools, stackoverflow and js fiddle");} else { alert("i do not know the codeing language ---> " + select + " <--- please try agein");} ;}
+
+else if (user == "games") {}
 
 else { alert("sorry i did not understand ---> " + user + " <--- pls check if there is a typo in your response for more help pls go to this link ----->https://sites.google.com/kellerisd.com/js-alexa/home ");}
