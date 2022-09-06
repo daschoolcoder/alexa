@@ -17,7 +17,7 @@ else if (select == 5) {alert("bbbbbeeeeeeeennnnnnn"); alert("yeeeeeeeeeees");}
 else if (select == 6) {alert("what do you call a bee who is defeted"); alert("i have been bee-feted");}
 else if (select == 7) {alert("how does a bee tell you to be gone "); alert("Bee-gone");}
 
-;}
+;} 
 
 else if (user == "social credit") {function death() {alert(":(((( no more social credit :((((((( ur credit:" + credit);} let credit = 10; let choice = prompt("is tiwan a contry");
 
