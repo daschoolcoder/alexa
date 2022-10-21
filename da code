@@ -1,60 +1,53 @@
-const b = document.createElement("body");
-b.innerHTML = `
-<input id="input" name="input" placeholder="type here"> 
-<input type="submit" for="input" onclick='c();'>
-
-`; 
-
-
-document.body.appendChild(b);
-function cm () {let cmdsi = document.getElementById("cmds").value;
-
-let cmd = cmdsi.replace('/', '');if (cmdsi.includes(""));
-
-if (cmdsi.includes("/runcode:")) {const code = cmdsi.replace('/runcode:','');let url = window.location.href;window.location.href= url + code             ;}           
-
-
-else if (cmdsi.includes("/inspect:")) {(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}());}
-
-else if (cmdsi.includes("/get:")) { const Http = new XMLHttpRequest();
-let url = cmdsi.replace('/get:','https://');
-Http.open("GET", url);
-Http.send();
-
-Http.onreadystatechange = (e) => {
-  alert(Http.respo);
-;};}
-
-       ;}
-function c () {
-
-var input = document.getElementById("input").value;
-
-
-       
-if (input == "/cmds") {const d = document.createElement("body"); d.innerHTML = `<br> <br> <input placeholder="cmds module" id ="cmds" name="cmds"> <input type="submit" for="cmds" onclick='cm()'>`; 
-
-
-document.body.appendChild(d);}               
-
-;}
-
 let print = console.log;
-let element = document.createElement;
-
 const bg = document.createElement("body");
-bg.innerHTML = ` <button style="background-color:rgb(255, 0, 0);" id="button">hack menu </button> <button style="background-color:rgb(0,255,0);" onclick=''>blooket hacks</button> <button style="background-color:rgb(0,0,255);" onclick=''>close tab</button> <br> <br> <button style="background-color:rgb(255,255,0);" onclick=''>snake hack</button> <button style="background-color:rgb(0,255,255);"> inspect element </button> <button style="background-color:rgb(255,0,255);" onclick='op();'>op stuff </button> `; document.body.appendChild(bg); function op() {const txt = document.createElement("div");
-txt.id = "opMenu";
-txt.innerHTML= `<body><button style="background-color:rgb(0,0,0);color:green" onclick='banu();'>5min 	search ban </button> <button style="background-color:rgb(0,0,0);color:green;" onclick='nuke();'> nuke chromebook </button> <button style="background-color:rgb(0,0,0);color:green;">giga nuke </button> </body> `;document.body.appendChild(txt);          function nuke () {while (2!==1) {open();} ;}
+bg.innerHTML = ` <body> <p>f </p><input id="input" name="input" placeholder="type here"> 
+<input type="submit" for="input" onclick='c();'> <br> <button style="background-color:rgb(255, 0, 0);" id="button">hack menu </button> <button style="background-color:rgb(0,255,0);" onclick=''>blooket hacks</button> <button style="background-color:rgb(0,0,255);" onclick='close();'>close tab</button> <br> <br> <button style="background-color:rgb(255,255,0);" onclick=''>snake hack</button> <button style="background-color:rgb(0,255,255);" onclick='inspect();'> inspect element </button> <button style="background-color:rgb(255,0,255);" onclick='op();'>op stuff </button> </body>`; 
+
+bg.style = `height: 300px; width: 300px; border: 4px solid rgb(15, 15, 15); background: rgb(240, 240, 240); position: absolute; top: 20x; left: 20px; border-radius: 10px; color: rgb(0, 0, 0); text-align: center;`;    function footer() {
+    let element = bg
+
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    element.onmousedown = ((e = window.event) => {
+        e.preventDefault();
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = (() => {
+            document.onmouseup = null;
+            document.onmousemove = null;
+        });
+        document.onmousemove = ((e) => {
+            e = e || window.event;
+            e.preventDefault();
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            let top = (element.offsetTop - pos2) > 0 ? (element.offsetTop - pos2) : 0;
+            let left = (element.offsetLeft - pos1) > 0 ? (element.offsetLeft - pos1) : 0;
+            element.style.top = top + "px";
+            element.style.left = left + "px";
+        });
+    });
+}
+
+footer();
+  
+ 
+
+document.body.appendChild(bg); function op() {const txt = document.createElement("div");
+
+                  
+
+txt.innerHTML= `<body style="background-color:#1c87c9;"> <button style="background-color:rgb(0,0,0);color:green" onclick='banu();'>5min 	search ban </button> <button style="background-color:rgb(0,0,0);color:green;" onclick='nuke();'> nuke chromebook </button> <button style="background-color:rgb(0,0,0);color:green;">giga nuke </button> </body> `;  document.body.appendChild(txt); } 
+      
+      
+      function nuke () {while (2!==1) {open();} ;}
                        function giga () {while (2!==1) {open("https://discord.gg");} ;}
      function banu () {open("https://discord.gg");}                  
-     ;}
-
-      
-
-
+     function close () {close();}
+     function inspect () {(function () 
+     
+     {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}());}
 
 print("bruh are u really hacking in to the main frame rn to get the plus features -_-");
 window.alert("by daSchoolCoder")
- 
- 
